@@ -43,6 +43,14 @@ int main(){
 
 	*/
 
+	int a,b,c,d;
+	a = 20;
+	b = 024;
+	c = 0x14;
+	d = -1U;			// d = -1  U is applied to 1 only... - sign is acting as a operator ... no such thing as negative literal.
+
+	std::cout << a <<" "<< b << " " << c <<" "<< d <<std::endl;
+
 	/*
 	Floating point literal:
 		1.can be written using two ways
@@ -60,8 +68,9 @@ int main(){
 	Boolean  literals:
 		1. The words true and false are literals of type bool.
 	*/
-	bool a = true;
-	bool b = false;
+	bool e,f;
+	e = true;
+	f = false;
 
 	/*************************************************************************************/
 
@@ -76,6 +85,13 @@ int main(){
 
 
 	*/
+
+	char ch_a = 'a';
+	wchar_t wch_a = L'a';
+	std::cout << ch_a << " " << wch_a << std::endl;
+
+	/*************************************************************************************/ 
+
 
 	/*
 	Escape sequence for non printable characters:
@@ -94,6 +110,13 @@ int main(){
 				\12 (newline) 
 
 	*/
+
+	char ch_b = '\056';
+	char ch_d = '\x72';
+	std::cout << ch_b << ch_d << std::endl;
+
+	/**************************************************************************************/
+
 
 	/*
 	Character string literal:
@@ -117,6 +140,7 @@ int main(){
 	*/
 
 
+
 	/*
 	Concatenated String(or Wide) Literal
 		1.Two string (or wide) character literals separated by SPACE,TAB,NEWLINE 
@@ -125,11 +149,18 @@ int main(){
 		2.Concatenation of string and wide literal is UNDEFINED.
 	*/
 
+	std::cout << "My name is " "shubham"<<std::endl;
+	/**************************************************************************************/
+
 	/*
 	Multiline literals
 
 	putting a backslash as the last character on a line causes that line and next to be treated as single line.
 	*/
+
+	std::cout
+	<< "Continues line\
+	like this " << std::endl;
 
 
 	return 0;
