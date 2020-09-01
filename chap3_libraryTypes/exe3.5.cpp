@@ -1,0 +1,19 @@
+#include <iostream>
+using std::string;
+using std::cin;
+using std::cout;
+using std::endl;
+
+/*
+Write a program to input one line at a time
+*/
+
+int main(){
+
+string s;
+while(getline(cin,s)){
+	cout << s << endl;
+}
+
+return 0;
+}
