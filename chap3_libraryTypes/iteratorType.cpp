@@ -108,5 +108,11 @@ It represent no of elements between those two iterator
 
 cout << "difference is "<< iterEnd - iterBegin << endl;
 
+
+/*
+Any operation that changes the size of a vector makes existing iterator invalid.
+For Example : After caling push_back, we should not rely on the value of an iterator into the vector.
+
+*/
 	return 0;
 }
